@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+        "atoum-next/atoum": "^5.0",
+        "phpunit/phpunit": "^12.5",
+        "kahlan/kahlan": "^6.1"
+    }
+}
