@@ -2,12 +2,10 @@
 
 namespace Tests\Unit;
 
-require_once __DIR__."/../../src/Calculator.php";
-
-use Codeception\Test\Unit;
-use mchojrin\testing\Calculator;
 use Tests\Support\UnitTester;
-class CalculatorTest extends Unit
+use mchojrin\testing\Calculator;
+
+class CalculatorTest extends \Codeception\Test\Unit
 {
     protected UnitTester $tester;
 
@@ -18,6 +16,6 @@ class CalculatorTest extends Unit
     // tests
     public function testAdd()
     {
-        verify(Calculator::add(3, 5))->equals(8);
+        $this->assertEquals(8, Calculator::add(3, 5));
     }
 }

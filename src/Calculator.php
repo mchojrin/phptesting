@@ -2,8 +2,6 @@
 
 namespace mchojrin\testing;
 
-require_once __DIR__.'/Multiplier.php';
-
 class Calculator {
 	private Multiplier $multiplier;
 
@@ -20,7 +18,7 @@ class Calculator {
 		return $this->multiplier->multiply(self::add($first, $second), $factor);
 	}
 
-	public static function divide(int $first, int $second): int {
-		return intdiv($first, $second);
-	}
+public static function addRandom(int $value): int {
+   return self::add($value, random_int(1, 100));
+}
 }

@@ -2,8 +2,6 @@
 
 namespace mchojrin\testing\tests\units;
 
-require_once __DIR__."/../../src/Calculator.php";
-
 use atoum\atoum;
 use \mchojrin\testing\Calculator as TestedClass;
 use \mchojrin\testing\Multiplier;
