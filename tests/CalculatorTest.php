@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__."/../src/Calculator.php";
-
 use PHPUnit\Framework\TestCase;
 use \mchojrin\testing\Calculator;
 
